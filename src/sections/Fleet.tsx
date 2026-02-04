@@ -5,7 +5,17 @@ import { cn } from '../utils/cn';
 import { useBooking } from '../context/BookingContext';
 import { useTheme } from '../context/ThemeContext';
 
-const vehicles = [
+interface Vehicle {
+    id: string;
+    name: string;
+    type: string;
+    image: string;
+    video?: string;
+    features: { icon: React.ReactNode; text: string; }[];
+    specs: { label: string; value: string; }[];
+}
+
+const vehicles: Vehicle[] = [
     {
         id: 'suv-tiguan',
         name: "Tiguan R Line",

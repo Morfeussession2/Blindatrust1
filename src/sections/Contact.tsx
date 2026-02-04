@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Send, MapPin, Phone, MessageSquare, Car, Shield, DollarSign, Calendar, Clock, Mail } from 'lucide-react';
+import { Send, Phone, MessageSquare, Car, Shield, DollarSign, Calendar, Clock, Mail } from 'lucide-react';
 import { useBooking } from '../context/BookingContext';
 import { useTheme } from '../context/ThemeContext';
 import { cn } from '../utils/cn';
