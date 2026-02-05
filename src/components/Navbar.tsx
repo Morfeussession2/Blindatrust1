@@ -39,7 +39,7 @@ export function Navbar() {
                 {/* Logo */}
                 <a href="#home" className="flex items-center gap-3 group">
                     <div className="relative w-8 h-8">
-                        <img src="/Logo.png" alt="Logo" className="w-24" />
+                        <img className="w-24" src={theme === 'dark' ? "Logo.png" : "LogoPreta-01.png"} alt="" />
                     </div>
                     <div className="flex flex-col">
                         <span className={cn(

@@ -11,7 +11,7 @@ export function Footer() {
                     <div className="col-span-1 md:col-span-2">
                         <div className="flex items-center gap-2 mb-6">
                             <div className="w-12 h-12 text-black flex items-center justify-center font-bold text-2xl rounded-sm">
-                                <img src="Logo.png" alt="" />
+                                <img src={theme === 'dark' ? "Logo.png" : "LogoPreta-01.png"} alt="" />
                             </div>
                             <div>
                                 <h2 className={cn("text-xl font-bold tracking-[0.2em] uppercase", theme === 'dark' ? "text-white" : "text-zinc-900")}>

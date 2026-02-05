@@ -5,7 +5,7 @@ import { cn } from '../utils/cn';
 import { useBooking } from '../context/BookingContext';
 import { useTheme } from '../context/ThemeContext';
 
-interface Vehicle {
+export interface Vehicle {
     id: string;
     name: string;
     type: string;
@@ -15,7 +15,7 @@ interface Vehicle {
     specs: { label: string; value: string; }[];
 }
 
-const vehicles: Vehicle[] = [
+export const vehicles: Vehicle[] = [
     {
         id: 'suv-tiguan',
         name: "Tiguan R Line",
@@ -42,7 +42,7 @@ const vehicles: Vehicle[] = [
             { icon: <Shield size={14} />, text: "Blindagem III-A" },
             { icon: <Star size={14} />, text: "Conforto VIP" },
             { icon: <Wifi size={14} />, text: "Wi-Fi 5G" },
-            { icon: <Zap size={14} />, text: "Foco C-Level" }
+            { icon: <Zap size={14} />, text: "7 Lugares" }
         ],
         specs: [
             { label: "Categoria", value: "SUV / 4x4" },
