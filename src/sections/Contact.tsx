@@ -453,7 +453,7 @@ _Enviado via Website BlindaTrust_`;
                                                 value={formData.time}
                                                 onChange={(e) => handleInputChange('time', e.target.value)}
                                                 className={cn(
-                                                    "w-full border rounded-xl pl-10 pr-4 py-3 outline-none transition-all duration-500 text-sm md:text-base",
+                                                    "w-full border rounded-xl pl-10 pr-4 py-3 outline-none transition-all duration-500 text-sm md:text-base text-left",
                                                     theme === 'dark' ? "bg-white/5 border-white/10 text-white focus:border-accent dark-inputs" : "bg-zinc-50 border-black/10 text-zinc-900 focus:border-accent"
                                                 )}
                                             />
