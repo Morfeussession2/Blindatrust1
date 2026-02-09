@@ -107,16 +107,17 @@ export function Hero() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 mb-12 md:mb-16 relative z-30"> {/* Added z-30 to ensure buttons are clickable */}
-                                <button className={cn(
-                                    "px-10 py-4 font-black tracking-widest text-xs uppercase rounded-sm transition-all hover:scale-105 active:scale-95 group w-full sm:w-auto flex items-center justify-center",
-                                    theme === 'dark' ? "bg-white text-black hover:bg-accent" : "bg-zinc-900 text-white hover:bg-accent"
-                                )}>
+                                <a
+                                    href="#contato" className={cn(
+                                        "px-10 py-4 font-black tracking-widest text-xs uppercase rounded-sm transition-all hover:scale-105 active:scale-95 group w-full sm:w-auto flex items-center justify-center",
+                                        theme === 'dark' ? "bg-white text-black hover:bg-accent" : "bg-zinc-900 text-white hover:bg-accent"
+                                    )}>
                                     Reservar Agora
                                     <ChevronRight
                                         size={18}
                                         className="inline ml-2 group-hover:translate-x-1 transition-transform"
                                     />
-                                </button>
+                                </a>
 
                                 <button
                                     className={cn(
